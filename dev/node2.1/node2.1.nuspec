@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SBSuite.TestPackages.Package2.1</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>robertmcintosh, msevestre</authors>
+    <owners>robertmcintosh, msevestre</owners>
+    <projectUrl>https://github.com/sbsuite/node2.1.git</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Test project 2.1</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Level 2</tags>
+  </metadata>
+</package>
