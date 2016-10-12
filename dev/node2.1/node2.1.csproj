@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="node3.1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SBSuite.TestPackages.Package3.1.1.0.0\lib\net452\node3.1.dll</HintPath>
+    <Reference Include="node3.1, Version=1.2.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SBSuite.TestPackages.Package3.1.1.2.25\lib\net452\node3.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
