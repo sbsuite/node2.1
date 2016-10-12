@@ -1,6 +1,24 @@
-﻿namespace node2_1
+﻿using node3_1;
+
+namespace node2_1
 {
-   public class ReportingServices
+   public interface IReportingServices
    {
+      bool Report(string fileWhereReportWillBeExported);
+   }
+
+   public class ReportingServices : IReportingServices
+   {
+      private readonly FileHelper _helper;
+
+      public ReportingServices()
+      {
+         _helper = new node3_1.FileHelper();
+      }
+
+      public bool Report(string fileWhereReportWillBeExported)
+      {
+         return _helper.SaveFile(fileWhereReportWillBeExported);
+      }
    }
 }
