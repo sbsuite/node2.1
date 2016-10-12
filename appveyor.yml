@@ -15,6 +15,10 @@ cache:
 before_build:
   - nuget restore
 
+nuget:
+  account_feed: true
+  project_feed: true
+
 build:
   publish_nuget: true
 
