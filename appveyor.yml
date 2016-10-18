@@ -25,6 +25,7 @@ nuget:
 
 build:
   publish_nuget: true
+  project: node2.1.sln 
 
 deploy:
   provider: NuGet
