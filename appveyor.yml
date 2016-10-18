@@ -2,6 +2,10 @@ configuration: Release
 
 version: '1.5.{build}'
 
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: W2pcjzUShIy6MuVzZJfXpHe3Ur8f0KGnhhOmdjjZWwdivYjBAaMRGpwA7jO8tymn
+
 assembly_info:
   patch: true
   file: AssemblyInfo.*
@@ -29,3 +33,6 @@ deploy:
   api_key: 
     secure: ++chmJA4vMpQ8q/psc3fh/lAX2eLtxLCguPvOmUnPRLIRmWCbgGw0OAMATOlvXH3
   artifact: /.*\.nupkg/
+
+test_script: 
+  - ps: ./testAndCover.ps1
