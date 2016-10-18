@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace node2_1
+namespace Tests.node2_1
 {
    [TestFixture]
    public class ReportingServicesSpecs
