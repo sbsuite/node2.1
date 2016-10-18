@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using System.Data;
+using node2_1;
+using NUnit.Framework;
 
 namespace Tests.node2_1
 {
@@ -8,7 +10,8 @@ namespace Tests.node2_1
       [Test]
       public void TestOne()
       {
-         Assert.IsTrue(true);
+         var reportService = new ReportingServices();
+         reportService.Report(new DataTable(), "A path");
       }
    }
 }

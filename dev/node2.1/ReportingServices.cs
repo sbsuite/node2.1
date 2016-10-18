@@ -14,7 +14,7 @@ namespace node2_1
 
       public ReportingServices()
       {
-         _helper = new node3_1.FileHelper();
+         _helper = new FileHelper();
       }
 
       public bool Report(DataTable dataTable, string fileWhereReportWillBeExported)
