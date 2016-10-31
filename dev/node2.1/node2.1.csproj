@@ -66,8 +66,8 @@
       <HintPath>..\..\packages\SBSuite.DevExpress.1.0.3\lib\net452\DevExpress.XtraPrinting.v15.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="node3.1, Version=1.2.125.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SBSuite.TestPackages.Package3.1.1.2.125\lib\net452\node3.1.dll</HintPath>
+    <Reference Include="node3.1, Version=1.2.157.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SBSuite.TestPackages.Package3.1.1.2.157\lib\net452\node3.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -92,6 +92,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\native\x64\Debug\NativeLibrary.lib" />
+    <None Include="bin\native\x64\Release\NativeLibrary.lib" />
+    <None Include="bin\native\x86\Debug\NativeLibrary.lib" />
+    <None Include="bin\native\x86\Release\NativeLibrary.lib" />
     <None Include="node2.1.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -100,6 +104,16 @@
     <EmbeddedResource Include="UI\HelloDevExpress.resx">
       <DependentUpon>HelloDevExpress.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\native\Include\NativeLibrary.h" />
+    <Content Include="bin\native\x64\Debug\NativeLibrary.dll" />
+    <Content Include="bin\native\x64\Release\NativeLibrary.dll" />
+    <Content Include="bin\native\x86\Debug\NativeLibrary.dll" />
+    <Content Include="bin\native\x86\Release\NativeLibrary.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
